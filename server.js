@@ -9,7 +9,7 @@ server.use(middlewares);
 server.use(
   jsonServer.rewriter({
     '/api/*': '/$1',
-    '/product/:resource/:id/show': '/:resource/:id',
+    '/employees': '/employees',
   })
 );
 server.use(router);
